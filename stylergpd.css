@@ -1,0 +1,41 @@
+body {
+    background-color:grey;
+}
+
+header {
+    background-color: white;
+    height: 100px;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+}
+
+
+
+
+form {
+
+    padding: 5px;
+    margin: auto;
+        font-size: 25px;
+        background-color: rgb(199, 205, 208);
+        border-radius: 10px;
+        box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+        padding: 100px;
+    
+}
+
+input {
+    padding: 5px;
+    border: 1px solid rgb(127, 119, 119);
+    border-radius: 10px;
+}
+
+fieldset {
+    background-color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}

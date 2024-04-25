@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+	position: relative;
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 20px); 
+    height: calc(100% + 20px); 
+    background-color: #fff;
+    opacity: 0;
+    border-radius: 10px; /* Bordure arrondie pour les bulles */
+    transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover:before {
+    opacity: 0.2;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px; /* Coins arrondis */
+    border: 2px solid black; /* Bordure noire */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+
+.video-row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid black; /* Bordure noire */
+    border-radius: 10px; /* Coins arrondis */
+
+}
+
+.content-container h3 {
+    text-align: center;
+}
+
+.video-container {
+    width: 30%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+}
+
+.video-container p {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #0e0c0c; 
+    padding: 10px; 
+    margin: 20px 0 0; 
+    font-family: Arial, sans-serif;
+    border-radius: 10px; /* Coins arrondis */
+    font-weight: bold; /* Texte en gras */
+    font-style: italic; /* Texte en italique */
+}
+
+.background-image {
+    background-image: url('https://st3.depositphotos.com/1020618/13308/i/450/depositphotos_133082310-stock-photo-close-up-of-kebab-sandwich.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    opacity: 0.8;
+}
+
+.hero-content {
+    background-color: white; /* Fond semi-transparent */
+    padding: 20px;
+    border: 2px solid black; /* Bordure de 2 pixels solide, couleur noire */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.texte-encadre {
+    background-color: #f2f2f2; /* Couleur de fond */
+    padding: 20px; /* Espacement intérieur */
+    border: 2px solid black; /* Bordure de 2 pixels solide, couleur noire */
+    border-radius: 10px; /* Coins arrondis */
+    text-align: center; /* Centrage du texte */
+    max-width: 600px; /* Largeur maximale du contenu */
+    margin: 20px auto 0; /* Centrage horizontal et espace de 20px au-dessus */
+}
+
+.texte-encadre a {
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Suppression du soulignement */
+    padding: 2px 5px; /* Espacement interne */
+    background-color: #333; /* Couleur de fond */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+.texte-encadre a:hover {
+    background-color: #555; /* Couleur de fond au survol */
+}

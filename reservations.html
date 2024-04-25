@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylereservations.css" rel="stylesheet">
+    <title>Reservations</title>
+</head>
+<body>
+
+</head>
+<body>
+ <header>
+        <h1>Croq Pizza</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+				<li><a href="carte.html">Carte</a></li>
+                <li><a href="contact.html">Contact</a></li>
+				<li><a href="Histoire.html">Histoire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+  <div class="bloc">
+      <video autoplay muted loop class="bloc__video">
+          <source src="medias/videokebab.mp4" type="video/mp4">
+      </video>
+      
+      <div class="form-container">
+          <div class="container">
+              <form action="#" method="post">
+                  
+                <h2>Réservation</h2>
+                  
+                <div class="form-group">
+                      <label for="Date">Date :</label>
+                      <input type="date" name="party" min="2024-01-01" max="2025-12-31" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email :</label>
+                      <input type="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="appt-time">Date de réservation :</label>
+                      <input type="time" name="apptim" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="ticketNum">Nombre de personnes :</label>
+                      <input type="number" name="ticketNum" min="1" required>
+                  </div>
+                  <div class="form-group">
+                      <button type="submit">Réserver</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+      
+      <footer>
+        <p>© 2024 Votre Site Web. Tous droits réservés.</p>
+        <p><a href="rgpd.html">Politique de Cookies</a></p>
+      </footer>
+  </div>
+  
+</body>
+</html>

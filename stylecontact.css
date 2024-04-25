@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+	position: relative;
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 20px); 
+    height: calc(100% + 20px); 
+    background-color: #fff;
+    opacity: 0;
+    border-radius: 10px; /* Bordure arrondie pour les bulles */
+    transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover:before {
+    opacity: 0.2;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px; /* Coins arrondis */
+    border: 2px solid black; /* Bordure noire */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+.contact-info p {
+    margin: 10px;
+}
+.contact-info a {
+    color: #007bff; /* Couleur bleue par défaut pour les liens */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+}
+.contact-info a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+.contact-info img {
+    max-width: 200px;
+    margin-right: 20px;
+}
